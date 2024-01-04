@@ -1,0 +1,40 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>
+            Machine Failure Prediction
+        </title>
+    </head>
+    <body>
+        <center>
+            <h1>
+                Machine Failure Prediction
+            </h1>
+            <form action="/predict" method="post">
+                <label>Enter the Type of machine :</label>
+                <input type="text" name="Type" id="Type" placeholder="Enter the Type of machine"/>
+                <br/> <br/>
+                <label>Enter the Air Temperature : </label>
+                <input type="text" name="AT" id="AT" placeholder="Enter the Air Temperature"/>
+                <br><br>
+                <labek>Enter the Process Temperature : </labek>
+                <input type="text" name="PT" id="PT" placeholder="Enter the Process Temperature"/>
+                <br><br>
+                <label>Enter the RPM : </label>
+                <input type="text" name="RPM" id="RPM" placeholder="Enter the RPM"/>
+                <br><br>
+                <label>Enter the Torque : </label>
+                <input type="text" name="Torque" id="Torque" placeholder="Enter the Torque"/>
+                <br><br>
+                <label>Enter the Tool Wear : </label>
+                <input type="text" name="TW" id="TW" placeholder="Enter the Tool Wear"/>
+                <br><br>
+                <input type="submit" value="Predict"/>
+            </form>
+            <h5>
+            Machine is <span style="color: red">{{result}}</span><span style="color:green">{{result1}}</span>
+               
+            </h5>
+        </center>
+    </body>
+</html>
